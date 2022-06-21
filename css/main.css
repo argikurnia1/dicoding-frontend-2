@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0rem 1rem;
+}
+
+a {
+  color: #000;
+  font-family: "Poppins", sans-serif;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+}
+
+h3 {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125rem;
+}
+
+h4 {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #767676;
+}
+
+h5 {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.75rem;
+  color: #717171;
+}
+
+/* Navbar */
+header {
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-left ul {
+  display: flex;
+  align-items: center;
+}
+
+.nav-left ul li {
+  display: flex;
+  align-items: center;
+}
+
+.nav-left ul li img {
+  display: flex;
+  align-items: center;
+}
+
+.nav-left ul li:nth-child(2) {
+  display: flex;
+  margin-left: 3.625rem;
+}
+
+.nav-left form {
+  display: flex;
+  align-items: center;
+}
+
+.nav-left form button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  margin-left: 1rem;
+}
+
+.nav-logo a {
+  font-family: "Playfair Display", serif;
+  font-size: 2.625rem;
+  color: #2c4f84;
+}
+
+.nav-middle ul {
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+}
+
+.nav-right ul {
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+}
+
+.nav-right ul li:nth-child(1) a {
+  display: flex;
+  align-items: center;
+}
+
+/* Main Content */
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f6f8fa;
+  max-width: 75rem;
+  margin: 2rem auto;
+  padding: 0rem 4.5rem 7rem 5rem;
+  border-radius: 10px;
+}
+
+/* Create Book Form */
+.create-book {
+  margin-top: 3.4375rem;
+  width: 17.375rem;
+  height: 385px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1rem 1.25rem 2rem;
+}
+
+.create-book__form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.create-book__form div:nth-child(1) {
+  margin-top: 1rem;
+}
+
+.create-book__form div {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.25rem;
+}
+
+.create-book h2 {
+  font-size: 1.25rem;
+  font-style: normal;
+  color: #00cd90;
+  text-align: center;
+}
+
+.create-book h2 .to-read {
+  color: #5488fd;
+}
+
+#title-form {
+  border: 1px solid #9f9b9b;
+  height: 2.5rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+#author-form {
+  border: 1px solid #9f9b9b;
+  height: 2.5rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+#year-form {
+  border: 1px solid #9f9b9b;
+  height: 2.5rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+.create-book__form button {
+  margin-top: 1rem;
+  background-color: #00cd90;
+  cursor: pointer;
+  padding: 0.75rem;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+/* To Do */
+.to-do {
+  width: 30%;
+  margin-top: 1.25rem;
+}
+
+.to-do .to-do__intro {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.to-do button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background: none;
+}
+
+.to-do div {
+  display: flex;
+  column-gap: 1.25rem;
+}
+
+/* Done */
+.done {
+  width: 30%;
+  margin-top: 1.25rem;
+}
+
+.done div {
+  display: flex;
+  column-gap: 1.25rem;
+}
+
+.done-intro {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.done-intro button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background: none;
+}
+
+.done-intro div {
+  display: flex;
+  column-gap: 1.25rem;
+}
+
+/* Book Content --> To-Do and Done */
+
+.book-content {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem 1rem;
+  background-color: #ffffff;
+  border: 1px solid #e1e3e5;
+  border-radius: 10px;
+}
+
+.book-left {
+  display: flex;
+}
+
+.book-left img {
+  align-self: start;
+}
+
+.book-left .book-intro {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+
+.book-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.book-right button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background: none;
+}
+
+.book-right img {
+  width: 20px;
+  height: 20px;
+}
+
+.book-right > img[alt="avatar"] {
+  align-self: end;
+}

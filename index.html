@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf</title>
+    <meta name="title" content="Bookshelf" />
+    <meta name="keywords" content="Bookshelf, To-Do Bookshelf" />
+    <link rel="stylesheet" href="./css/main.css">
+    <script defer src="./js/index.js"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <!-- Left -->
+            <div class="nav-left">
+                <ul>
+                    <li class="nav-logo">
+                        <a href="/">B</a>
+                    </li>
+
+                    <li>
+                        <form id="form-search">
+                            <input class="search-input" type="text" placeholder="Search your book" />
+                            <button type="submit">
+                                <img src="./images/search.svg" alt="search" />
+                            </button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+            <!-- Middle -->
+            <div class="nav-middle">
+                <ul>
+                    <li>
+                        <a href="#all-books">All Books</a>
+                    </li>
+
+                    <li>
+                        <a href="#calendar">Calendar</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Right -->
+            <div class="nav-right">
+                <ul>
+                    <li>
+                        <a href="#book-suggestion">
+                            <img src="./images/book.svg" alt="book suggestion" />
+                            Book Suggestion
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#edit">
+                            <img src="./images/edit.svg" alt="edit" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#notification">
+                            <img src="./images/notification.svg" alt="notification" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#profile">
+                            <img src="./images/avatar.svg" alt="avatar" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Create Book -->
+        <article class="create-book">
+            <section>
+                <h2>Create Book <span class="to-read">To Read</span></h2>
+            </section>
+
+            <section>
+                <form class="create-book__form" id="submit-form">
+                    <div>
+                        <label>Title</label>
+                        <input type="text" placeholder="Title" id="title-form" min="1" max="255" required />
+                    </div>
+                    <div>
+                        <label>Author</label>
+                        <input type="text" placeholder="Author" id="author-form" min="1" max="255" required />
+                    </div>
+                    <div>
+                        <label>Year</label>
+                        <input type="number" placeholder="Year" id="year-form" min="1" max="9999" required />
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+        </article>
+
+        <!-- To Do -->
+        <article class="to-do">
+            <section class="to-do__intro">
+                <h3>To Do</h3>
+                <div>
+                    <button>
+                        <img src="./images/plus.svg" />
+                    </button>
+                    <button>
+                        <img src="./images/dot-horizontal-outline.svg" />
+                    </button>
+                </div>
+            </section>
+
+        </article>
+
+        <!-- Done -->
+        <article class="done">
+            <section class="done-intro">
+                <h3>Done</h3>
+                <div>
+                    <button>
+                        <img src="./images/plus.svg" />
+                    </button>
+                    <button>
+                        <img src="./images/dot-horizontal-outline.svg" />
+                    </button>
+                </div>
+            </section>
+
+        </article>
+    </main>
+
+
+</body>
+
+</html>
